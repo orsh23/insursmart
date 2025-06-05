@@ -440,8 +440,8 @@ export default function CodeCategoriesTab() {
           currentItem={currentCategory}
           onSave={handleDialogSubmit}
           parentCategories={categories}
-          formData={formData} {/* Pass formData state */}
-          setFormData={setFormData} {/* Pass setFormData state setter */}
+            formData={formData}
+            setFormData={setFormData}
           dialogError={dialogError} // Pass dialogError to be displayed in dialog
         />
       )}
