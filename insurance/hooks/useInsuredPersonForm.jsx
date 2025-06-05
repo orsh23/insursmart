@@ -16,10 +16,6 @@ export function useInsuredPersonForm(initialData = null, onSuccess) {
     email: '',
     address: '',
     city: '',
-    identification: {
-      type: '', // Default or make required
-      number: '',
-    },
     ...(initialData || {}),
     // Ensure identification is an object even if initialData.identification is null/undefined
     identification: {

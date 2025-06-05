@@ -14,7 +14,8 @@ const MOCK_TRANSLATIONS = {
         'buttons.manage': 'Manage',
         'pageTitles.networkManagement': 'Network Management',
         'networkManagement.pageDescription': 'Manage providers, doctors, and their affiliations.',
-        'pageTitles.providerDoctorLinkageShort': 'Linkage', // For shorter tab label
+        // Short label for the provider-doctor linkage tab
+        'pageTitles.providerDoctorLinkageShort': 'Linkages',
         'adminSettings.systemHealth.title': 'System Health Dashboard',
         'adminSettings.systemHealth.pageDescription': 'Overview of system component statuses and performance metrics.',
         'adminSettings.systemHealth.databaseService': 'Database Service',
@@ -82,7 +83,6 @@ const MOCK_TRANSLATIONS = {
         'buttons.resetFilters': 'Reset Filters',
         'buttons.refresh': 'Refresh',
         'buttons.retry': 'Retry',
-        'messages.loadingData': 'Loading {{item}}...',
         'rfc.noRFCsMatchTitle': 'No RFCs Match Filters',
         'rfc.noRFCsMatchFilterDesc': 'Try adjusting filters or create a new RFC.',
         'rfc.noRFCsDesc': 'No RFCs found. Start by creating a new request for commitment.',
@@ -185,7 +185,6 @@ const MOCK_TRANSLATIONS = {
         'linkage.noLinkagesFound': 'No Linkages Found',
         'linkage.noLinkagesFilterMessage': 'No linkages match your current filters. Try adjusting your search.',
         'linkage.startAdding': 'Start by adding a new linkage between a doctor and a provider.',
-        'pageTitles.providerDoctorLinkageShort': 'Linkages', // Ensure this exists for the tab title',
 
         // Tasks specific translations
         'tasks.fields.title': 'Title',
@@ -431,7 +430,6 @@ const MOCK_TRANSLATIONS = {
         'common.langCode': 'en', // For logic based on language
         'common.cancel': 'Cancel',
         'common.confirm': 'Confirm',
-        'common.featureComingSoonTitle': 'Feature Coming Soon',
         'common.featureComingSoonDesc': '{{featureName}} will be available soon.'
     },
     'he': {
@@ -863,9 +861,7 @@ const MOCK_TRANSLATIONS = {
         'common.langCode': 'he', // For logic based on language
         'common.cancel': 'ביטול',
         'common.confirm': 'אישור',
-        'common.featureComingSoonTitle': 'תכונה תגיע בקרוב',
         'common.featureComingSoonDesc': '{{featureName}} יהיה זמין בקרוב.'
-    }
 };
 
 // Simple language hook implementation
