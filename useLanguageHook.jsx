@@ -860,8 +860,7 @@ const MOCK_TRANSLATIONS = {
         'common.confirmDeleteDescription': 'האם אתה בטוח שברצונך למחוק {{item}} ({{count}})? לא ניתן לבטל פעולה זו.',
         'common.langCode': 'he', // For logic based on language
         'common.cancel': 'ביטול',
-        'common.confirm': 'אישור',
-        'common.featureComingSoonDesc': '{{featureName}} יהיה זמין בקרוב.'
+        'common.confirm': 'אישור'
 };
 
 // Simple language hook implementation

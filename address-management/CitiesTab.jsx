@@ -232,7 +232,7 @@ export default function CitiesTab({ globalActionsConfig: externalActionsConfig, 
                 onCancelSelectionMode={handleCancelSelectionMode}
                 selectedItemCount={selectedItems.length}
                 itemTypeForActions={t('addresses.city.singular', { defaultValue: 'City' })}
-                t={t} {/* ADDED t PROP */}
+                t={t}
               />
             <Button variant="outline" onClick={refreshCities}>
                 {t('common.refresh', { defaultValue: 'Refresh' })}
