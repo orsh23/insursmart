@@ -30,7 +30,11 @@ export default function StreetsTab({ globalActionsConfig: externalActionsConfig,
         setAllCities(Array.isArray(cityData) ? cityData : []);
       } catch (error) { 
         console.error("Failed to fetch cities for Streets tab:", error);
-        toast({ title: t('errors.fetchCitiesError', { defaultValue: "Could not load cities" }), description: (error as Error).message, variant: 'destructive'});
+        toast({
+          title: t('errors.fetchCitiesError', { defaultValue: "Could not load cities" }),
+          description: error instanceof Error ? error.message : String(error),
+          variant: 'destructive'
+        });
       }
     };
     fetchCities();
@@ -232,7 +236,14 @@ export default function StreetsTab({ globalActionsConfig: externalActionsConfig,
       closeImportDialog();
     } catch (importError) {
       console.error("Error bulk creating streets:", importError);
-      toast({ title: t('import.errorTitle', {defaultValue: "Import Failed"}), description: (importError as Error).message || t('import.genericErrorDesc', {defaultValue: "An unexpected error occurred during import."}), variant: "destructive" });
+        toast({
+          title: t('import.errorTitle', { defaultValue: "Import Failed" }),
+          description:
+            importError instanceof Error
+              ? importError.message
+              : t('import.genericErrorDesc', { defaultValue: "An unexpected error occurred during import." }),
+          variant: "destructive",
+        });
     }
   };
 
