@@ -436,7 +436,7 @@ const MOCK_TRANSLATIONS = {
         'common.langCode': 'he',
         'common.cancel': 'ביטול',
         'common.confirm': 'אישור'
-    },
+    }
 };
 
 // Simple language hook implementation
